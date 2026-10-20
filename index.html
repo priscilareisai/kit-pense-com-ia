@@ -1,0 +1,85 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kit Pense com IA | Priscila Reis</title><meta name="description" content="12 prompts para usar a IA como tutora, crítica e parceira de decisão.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+/* Coluna única, cards brancos com filete vinho, como o carrossel */
+:root{--areia:#EFE8DD;--tinta:#1E1A19;--vinho:#7F0A25;--verde:#7ED957;--branco:#FFFFFF;--muted:#5d5652;
+--display:'Playfair Display',Georgia,serif;--body:Poppins,system-ui,sans-serif;color-scheme:light}
+body{background:var(--areia);color:var(--tinta);font-family:var(--body);font-size:17px;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero{background:var(--tinta);color:var(--areia);padding:40px 28px;display:grid;gap:14px}
+.logo{width:min(280px,75%);height:auto;margin-bottom:12px}
+.handle{font-size:14px;font-weight:500;opacity:.85}
+.badge{justify-self:start;background:var(--verde);color:var(--tinta);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px}
+h1{font-size:clamp(40px,9vw,64px);font-weight:800;line-height:1;letter-spacing:-.035em;text-wrap:balance}
+h1 span{color:var(--verde)}
+.sub{font-family:var(--display);font-size:clamp(22px,4.5vw,28px);line-height:1.2}
+.how{margin-top:28px;display:grid;gap:10px;font-size:16px}
+.how b{color:var(--vinho)}
+.part{margin-top:44px}
+.eyebrow{display:inline-block;background:var(--vinho);color:var(--branco);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px}
+h2{font-size:clamp(28px,6vw,38px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin:12px 0 18px;text-wrap:balance}
+.list{display:grid;gap:16px}
+.card{background:var(--branco);border-left:6px solid var(--vinho);padding:22px 22px 24px;min-width:0}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.num{font-weight:800;color:var(--vinho);font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+h3{font-size:21px;font-weight:700;margin:6px 0 10px;line-height:1.2}
+.txt{font-size:16.5px;line-height:1.55}
+.txt b{color:var(--vinho)}
+.copy{font:inherit;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:var(--verde);color:var(--tinta);border:0;padding:10px 16px;cursor:pointer;min-height:40px}
+.copy:hover{background:#6cc947}
+.copy:focus-visible{outline:2px solid var(--vinho);outline-offset:2px}
+.copy.ok{background:var(--tinta);color:var(--areia)}
+.end{margin-top:48px;background:var(--tinta);color:var(--areia);padding:32px 28px;display:grid;gap:10px}
+.end h2{margin:0;color:var(--areia)} .end h2 span{color:var(--verde)}
+.end a{color:var(--verde);font-weight:700}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--tinta);color:var(--areia);padding:12px 20px;font-weight:600;font-size:15px}
+@media (prefers-reduced-motion:no-preference){.copy{transition:background .15s}}
+</style>
+<style>*{box-sizing:border-box;margin:0;padding:0}</style></head><body>
+<main class="wrap">
+<header class="hero">
+<img src="logo.png" alt="Priscila Reis, inteligência artificial que transforma" class="logo" width="640" height="134">
+<span class="badge">Kit gratuito</span>
+<h1>Kit Pense com <span>IA</span></h1>
+<p class="sub">12 prompts para usar a IA como <i>tutora, crítica e parceira de decisão.</i></p>
+</header>
+<div class="how">
+<p>Toque em <b>Copiar prompt</b>, cole no ChatGPT, Claude, Gemini ou Copilot e troque o que está entre <b>[colchetes]</b> pelo seu caso.</p>
+<p>Responda às perguntas da IA antes de pedir qualquer resposta pronta. A decisão final é sempre sua.</p>
+</div>
+<section class="part"><p class="eyebrow">IA como tutora</p><h2>Aprenda em menos tempo</h2><div class="list">
+<article class="card"><div class="head"><span class="num">Prompt 01</span><button type="button" class="copy" data-i="1" aria-label="Copiar prompt 01">Copiar prompt</button></div><h3>Tutora socrática</h3><p class="txt" id="p1">Quero aprender <b>[tema]</b>. Atue como minha tutora. Não me dê a resposta pronta. Faça uma pergunta por vez para descobrir o que eu já sei, explique só o próximo passo e espere eu responder antes de seguir. A cada 3 respostas, me dê um feedback curto sobre o que entendi e o que ainda está confuso.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 02</span><button type="button" class="copy" data-i="2" aria-label="Copiar prompt 02">Copiar prompt</button></div><h3>Explicação em camadas</h3><p class="txt" id="p2">Explique <b>[conceito]</b> em três níveis: para uma pessoa de 12 anos, para uma profissional iniciante e para uma especialista. Depois me faça 3 perguntas para eu provar que entendi o nível intermediário. Corrija minhas respostas sem reescrevê-las por mim.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 03</span><button type="button" class="copy" data-i="3" aria-label="Copiar prompt 03">Copiar prompt</button></div><h3>Diagnóstico antes de estudar</h3><p class="txt" id="p3">Vou estudar <b>[tema]</b>. Antes de qualquer explicação, me faça 5 perguntas de diagnóstico, da mais fácil para a mais difícil. Com base nos meus erros, monte um plano de estudo de <b>[tempo disponível]</b> focado só nas minhas lacunas.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 04</span><button type="button" class="copy" data-i="4" aria-label="Copiar prompt 04">Copiar prompt</button></div><h3>Ensine para aprender</h3><p class="txt" id="p4">Vou te explicar <b>[tema]</b> com as minhas palavras. Aja como uma aluna curiosa: aponte onde fui vaga, onde usei jargão sem explicar e onde meu raciocínio pulou etapas. Não reescreva a minha explicação. Só me faça perguntas até ela ficar clara.</p></article>
+</div></section>
+<section class="part"><p class="eyebrow">IA como crítica</p><h2>Questione antes de concordar</h2><div class="list">
+<article class="card"><div class="head"><span class="num">Prompt 05</span><button type="button" class="copy" data-i="5" aria-label="Copiar prompt 05">Copiar prompt</button></div><h3>Advogada do diabo</h3><p class="txt" id="p5">Esta é a minha posição sobre <b>[tema]</b>: <b>[sua opinião]</b>. Construa o argumento mais forte possível contra ela, com dados e exemplos. Depois me diga qual ponto desse contra-argumento eu teria mais dificuldade de responder.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 06</span><button type="button" class="copy" data-i="6" aria-label="Copiar prompt 06">Copiar prompt</button></div><h3>Caça às premissas</h3><p class="txt" id="p6">Leia o meu plano abaixo e liste as premissas que estou assumindo sem provar. Para cada uma, diga o que aconteceria se ela fosse falsa e como eu poderia testá-la rapidamente. <b>[cole seu plano aqui]</b></p></article>
+<article class="card"><div class="head"><span class="num">Prompt 07</span><button type="button" class="copy" data-i="7" aria-label="Copiar prompt 07">Copiar prompt</button></div><h3>Editora exigente</h3><p class="txt" id="p7">Avalie o meu texto abaixo como uma editora exigente. Dê uma nota de 0 a 10 para clareza, argumentação e estrutura, aponte os 3 trechos mais fracos e explique por quê. Não reescreva nada: quero melhorar com as minhas palavras. <b>[cole seu texto aqui]</b></p></article>
+<article class="card"><div class="head"><span class="num">Prompt 08</span><button type="button" class="copy" data-i="8" aria-label="Copiar prompt 08">Copiar prompt</button></div><h3>Detector de vieses</h3><p class="txt" id="p8">Analise o meu raciocínio abaixo e identifique possíveis vieses, como confirmação, ancoragem e excesso de confiança. Para cada um, mostre o trecho e me faça uma pergunta que me ajude a revê-lo. <b>[cole seu raciocínio aqui]</b></p></article>
+</div></section>
+<section class="part"><p class="eyebrow">Parceira de decisão</p><h2>Decida melhor, sem terceirizar</h2><div class="list">
+<article class="card"><div class="head"><span class="num">Prompt 09</span><button type="button" class="copy" data-i="9" aria-label="Copiar prompt 09">Copiar prompt</button></div><h3>Mapa de opções</h3><p class="txt" id="p9">Preciso decidir <b>[decisão]</b>. Antes de sugerir qualquer caminho, me faça perguntas até entender meu contexto, meus critérios e minhas restrições. Depois organize as opções em uma tabela com prós, contras, riscos e o que eu ainda precisaria saber para escolher.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 10</span><button type="button" class="copy" data-i="10" aria-label="Copiar prompt 10">Copiar prompt</button></div><h3>Pré-mortem</h3><p class="txt" id="p10">Imagine que escolhi <b>[opção]</b> e, daqui a 12 meses, deu errado. Liste os 5 motivos mais prováveis do fracasso e, para cada um, um sinal de alerta que eu possa acompanhar desde já.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 11</span><button type="button" class="copy" data-i="11" aria-label="Copiar prompt 11">Copiar prompt</button></div><h3>Critérios antes da resposta</h3><p class="txt" id="p11">Me ajude a definir os critérios para decidir <b>[decisão]</b>. Proponha uma lista, me pergunte qual peso eu dou a cada critério e só então pontue as opções <b>[A, B e C]</b> com base nos meus pesos. Mostre a conta.</p></article>
+<article class="card"><div class="head"><span class="num">Prompt 12</span><button type="button" class="copy" data-i="12" aria-label="Copiar prompt 12">Copiar prompt</button></div><h3>Conselho de perspectivas</h3><p class="txt" id="p12">Analise <b>[decisão]</b> sob 4 olhares: uma investidora cautelosa, uma cliente exigente, uma especialista técnica e a minha versão daqui a 5 anos. Termine com as 3 perguntas que eu ainda preciso responder sozinha antes de decidir.</p></article>
+</div></section>
+<section class="end">
+<h2>Use a IA para <span>pensar melhor.</span></h2>
+<p>E preserve o que continua sendo seu: analisar, criar, questionar e decidir.</p>
+<p>Me siga em <a href="https://www.instagram.com/priscilareis.ai/">@priscilareis.ai</a> para mais conteúdos sobre IA na prática.</p>
+</section>
+</main>
+<div class="toast" id="toast" hidden>Prompt copiado</div>
+<script>
+const toast=document.getElementById('toast');let tt;
+function show(m){toast.textContent=m;toast.hidden=false;clearTimeout(tt);tt=setTimeout(()=>toast.hidden=true,1800);}
+function selectText(el){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);}
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+ const el=document.getElementById('p'+b.dataset.i);const text=el.innerText.trim();
+ const done=()=>{b.textContent='Copiado';b.classList.add('ok');show('Prompt copiado');setTimeout(()=>{b.textContent='Copiar prompt';b.classList.remove('ok');},2000);};
+ try{navigator.clipboard.writeText(text).then(done).catch(()=>{selectText(el);show('Texto selecionado: toque em Copiar');});}catch(e){selectText(el);show('Texto selecionado: toque em Copiar');}
+}));
+</script></body></html>
